@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Drill 2</title>
+
+	<style>
+		body {
+			font-family: Zalando Sans Expanded;
+			margin: 20px;
+			background-image: url(https://blog.delivermytune.com/wp-content/uploads/2024/11/spotify-image.png);
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		h1 {
+			color: black;
+		}
+		button {
+      		padding: 10px 15px;
+      		margin-right: 10px;
+      		border: none;
+      		border-radius: 5px;
+      		cursor: pointer;
+      		background-color: #b22222;
+     		color: white;
+      		font-weight: bold;
+   		}
+   		button:hover {
+      		background-color: #f230aa;
+      	}
+      	form {
+      		background-color: whitesmoke;
+     		width: 70%;
+      		padding: 20px;
+      		margin: 0 auto;
+      		border-radius: 30px;
+      		border: 7px solid #083248;
+      		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
+      	}
+      	fieldset {
+     		margin-bottom: 25px;
+      		padding: 15px;
+      		border: 2px solid #ccc;
+      		border-radius: 8px;
+      		background-color:#ccf656 ;
+      	}
+      	p {
+      		color: black;
+      		text-align: center;
+      		font-size: 50px;
+      	}
+      	textarea{
+      		width: 420px;
+      		height: 100px;
+      	}
+      	select{
+      		width: 400px;
+      		height: 30px;
+      	}
+      	input{
+      		border-radius: 5px;
+      	}
+      	select{
+      		border-radius: 20px;
+      	}
+      	input[type="submit"]{
+      		background-color: #f230aa;
+      		border-radius: 20px;
+      		width: 20%;
+      		height: 40px;
+      		align-items: center;
+      		font-family: Zalando Sans Expanded;
+      		font-weight: 100px;
+      	}
+	</style>
+
+</head>
+<body>
+<form>
+
+	<fieldset>
+
+   	  <strong><p>Music Recommendation</p></strong>
+      <br>
+      <label><b>Your Name: <b><input type="text" name="name" placeholder="Enter your full name" required></label><br> <br>
+       <label><b>Your Email: <b><input type="Email" name="email" placeholder="Enter your Email"></label><br> <br>
+      <label>Recommended Song Title: <input type="text" name="title"> <br> <br>
+      <label>Why would you recommend it?<br>
+       <textarea name="instructions" maxlength="400" placeholder="Feedback here..."></textarea>
+      </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Genres (select all that apply)</legend>
+        <label><input type="checkbox" value="Pop"> Pop</label>
+        <label><input type="checkbox" value="Rap"> Rap</label>
+        <label><input type="checkbox" value="Jazz"> Jazz</label>
+        <label><input type="checkbox" value="Rock"> Rock</label>
+        <label><input type="checkbox" value="Indie"> Indie</label>
+        <label><input type="checkbox" value="Classical"> Classical</label>
+        <label><input type="checkbox" value="Country"> Country</label>
+        <label><input type="checkbox" value="R&B"> R&B</label>
+      </fieldset>
+
+      <fieldset>
+      	<legend>Rate the Song:</legend>
+      	<label><input type="radio" name="rating"value="1"> 1</label>
+      	<label><input type="radio" name="rating"value="2"> 2</label>
+      	<label><input type="radio" name="rating"value="3"> 3</label>
+      	<label><input type="radio" name="rating"value="4"> 4</label>
+      	<label><input type="radio" name="rating"value="5"> 5 (Best)</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Where Did You Hear It?</legend>
+          <select name="Streaming Service">
+          	<option value="stream">Select Platform</option>
+            <option value="stream">Spotify</option>
+            <option value="stream">Apple Music</option>
+            <option value="stream">Deezer</option>
+            <option value="stream">Youtube Music</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset style="text-align: center;">
+      <input type="submit" value="Submit Recommendation" onclick="confirmSubmission()">
+  	  </fieldset>
+
+  	   <script>
+  		function confirmSubmission() {
+    	alert("✅ Your submission has been received");
+  }
+  	   </script>
+       </div>
+
+</form>
+</body>
+</html>
